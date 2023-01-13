@@ -12,9 +12,9 @@ app.use(morgan('tiny'))
 
 app.use(express.json())
 
-app.get("",(req,res)=>{
+app.get("/",(req,res)=>{
 
-  res.send("saludo desde el backend")
+  res.send("saludo desde el backend  hola ")
 })
   
 app.post("/create-payment-intent", async (req, res) => {
@@ -54,6 +54,6 @@ app.post("/create-payment-intent", async (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('App listening on port 3000!');
+app.listen(process.env.PORT, () => {
+  console.log('App listening on port '+process.env.PORT);
 })
