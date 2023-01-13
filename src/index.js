@@ -7,7 +7,7 @@ const app =express()
 
 const stripe = new Stripe("sk_test_51MNjItANEHdq6jhMobVaenrB8XCZzzcrdUXlWtyIm37wXMBuLUgni42TLHhOJ0crPhiCz5Bma8EzcrtGZ10vp8CE00sVZA8NQg")
 
-app.use(cors({origin:'http://localhost:5173'}))
+app.use(cors({origin:'https://ecomerce-frontend.vercel.app/'}))
 app.use(morgan('tiny'))
 
 app.use(express.json())
