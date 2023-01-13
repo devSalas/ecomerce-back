@@ -12,7 +12,10 @@ app.use(morgan('tiny'))
 
 app.use(express.json())
 
+app.get("",(req,res)=>{
 
+  res.send("saludo desde el backend")
+})
   
 app.post("/create-payment-intent", async (req, res) => {
 
