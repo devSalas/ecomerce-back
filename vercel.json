@@ -1,7 +1,5 @@
 {
-  "name":"e-commerce-stripe",
   "version":2,
-  "public":true,
   "builds":[
   {
     "src":"./index.js",
